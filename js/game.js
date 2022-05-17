@@ -86,10 +86,7 @@ scene("game", () => {
         go("game");
     })
 
-    const scoreText =  add([
-        text(score, {size: 60, width: 320})
-    ])
-
+    
     const player = add([
         sprite("poggers"),
         scale(0.5),
@@ -126,6 +123,9 @@ scene("game", () => {
         genPipes();
     })
 
+    const scoreText =  add([
+        text(score, {size: 60, width: 320})
+    ])
 
     action("pipe", (pipe) => {
         pipe.move(pipespeed, 0)
