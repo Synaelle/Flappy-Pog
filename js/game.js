@@ -71,7 +71,7 @@ scene("game", () => {
     function genPipes(){
 
         const PIPE_GAP = rand(gap1, gap2);
-        const offset = rand(-100, 100)
+        const offset = rand(-110, 110)
 
         add([
             sprite("pipe"),
