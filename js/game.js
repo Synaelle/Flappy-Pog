@@ -60,6 +60,10 @@ scene("game", () => {
             sprite("bg"),
         ])
 
+    const scoreText =  add([
+            text(score, {size: 60, width: 320})
+    ])    
+
     hardcore = 0;
     let score = 0;
     let pipespeed = -180;
@@ -123,9 +127,6 @@ scene("game", () => {
         genPipes();
     })
 
-    const scoreText =  add([
-        text(score, {size: 60, width: 320})
-    ])
 
     action("pipe", (pipe) => {
         pipe.move(pipespeed, 0)
