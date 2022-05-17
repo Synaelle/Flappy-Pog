@@ -20,5 +20,6 @@ footer {
 }
 
 a:visited { 
+    text-decoration: none;
     color: whitesmoke; 
 }
