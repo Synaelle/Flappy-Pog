@@ -137,7 +137,7 @@ scene("gameover", (score) => {
     }
 
     add([
-        text("u suck lol\n" + "Score: " + score + "\nHighscore: " + highScore + "\nHardcore mode: " + hardcore, {size: 40})
+        text("You failed!\n" + "Score: " + score + "\nHighscore: " + highScore + "\nHardcore mode: " + hardcore, {size: 40})
     ]);
 
     onMousePress(() =>{
