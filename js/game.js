@@ -11,10 +11,7 @@ loadSprite("menu", "img/intro.png")
 loadSound("jump", "sounds/jump.wav");
 loadSound("gameover", "sounds/gameover.wav")
 loadSound("point", "sounds/point.wav")
-loadSound("music", "sounds/fun.wav")
 loadSound("bgm", "sounds/music.mp3")
-loadSound("fun", "sounds/fun.mp3")
-//play("bgm", {volume: 0.3, loop: true})
 
 let highScore = 0;
 let hardcore = 0;
