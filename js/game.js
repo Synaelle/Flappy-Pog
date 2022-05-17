@@ -5,9 +5,11 @@ kaboom({
     font: "sinko",
     debug: false,
 });
-loadSprite("poggers", "img/pog128.png");
+loadSprite("poggers", "img/pog.png");
 loadSprite("pipe", "img/pipe.png");
 loadSprite("menu", "img/intro.png")
+loadSprite("bg", "img/bg.png")
+loadSprite("start", "img/start.png")
 loadSound("jump", "sounds/jump.wav");
 loadSound("gameover", "sounds/gameover.wav")
 loadSound("point", "sounds/point.wav")
@@ -17,10 +19,33 @@ let highScore = 0;
 let hardcore = 0;
 let music = 0;
 
+
 scene("intro", () => {
+
+    //We do a little bit of trolling :D
+    let playY = rand(-100, 50);
+    
     add([
-        sprite("menu"),
-        scale(1.0),
+        sprite("bg"),
+    ])
+
+    if(rand(0, 1000) === 727){
+        add([
+            sprite("menu", {flipY: true}),
+        ])
+
+        playY = -250
+    }
+    else{
+        add([
+            sprite("menu"),
+        ])
+    }
+
+    add([
+        sprite("start"),
+        pos(0, playY),
+        "start",
     ])
 
     onMousePress(() =>{
@@ -29,6 +54,11 @@ scene("intro", () => {
 })
 
 scene("game", () => {
+
+    
+    add([
+            sprite("bg"),
+        ])
 
     hardcore = 0;
     let score = 0;
@@ -46,8 +76,8 @@ scene("game", () => {
 
     onKeyPress("h", () =>{
         hardcore = 1;
-        pipespeed = -500
-        gap1 = 150;
+        pipespeed = -1000
+        gap1 = 110;
         gap2 = 180;
         pipescale = 5;
     })
@@ -125,6 +155,10 @@ scene("game", () => {
 });
 
 scene("gameover", (score) => {
+
+    add([
+        sprite("bg"),
+    ])
 
     play("gameover");
 
