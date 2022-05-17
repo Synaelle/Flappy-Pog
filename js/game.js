@@ -77,7 +77,7 @@ scene("game", () => {
     onKeyPress("h", () =>{
         hardcore = 1;
         pipespeed = -1000
-        gap1 = 110;
+        gap1 = 150;
         gap2 = 180;
         pipescale = 5;
     })
