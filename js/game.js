@@ -23,7 +23,7 @@ let music = 0;
 scene("intro", () => {
 
     //We do a little bit of trolling :D
-    let playY = rand(-100, 50);
+    let playY = rand(-50, 50);
     
     add([
         sprite("bg"),
