@@ -7,6 +7,6 @@ You can try the game here: [Click here!](http://synaelle.erethia.ovh/games/flapp
 - Adding more gamemodes
 - Making the game work on mobile
 - Adding better sound effects & music
-- Improve hardcore mode
+- Rework completely hardcore mod (by putting it in a brand new game mode)
 - Improve score screen
 - Storing in cookies the highscore
