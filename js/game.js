@@ -63,7 +63,7 @@ scene("game", () => {
     hardcore = 0;
     let score = 0;
     let pipespeed = -180;
-    let gap1 = 175;
+    let gap1 = 180;
     let gap2 = 210;
     let pipescale = 2;
 
@@ -98,7 +98,7 @@ scene("game", () => {
     function genPipes(){
 
         const PIPE_GAP = rand(gap1, gap2);
-        const offset = rand(-110, 110)
+        const offset = rand(-90, 90);
 
         add([
             sprite("pipe"),
