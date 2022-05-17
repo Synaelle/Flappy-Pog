@@ -13,5 +13,8 @@ body {
 }
 
 footer {
+    color: whitesmoke;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
     text-align: center;
+    padding-top: 40px;
 }
